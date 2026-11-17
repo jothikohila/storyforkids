@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #d9f5df, #fdf0d5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 85vh;
+    background: white;
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* LEFT SIDE */
+
+.left {
+    width: 45%;
+    position: relative;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.45);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.image-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* RIGHT SIDE */
+
+.right {
+    width: 55%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fffdf5;
+    overflow: hidden;
+}
+
+.right h2 {
+    color: #23633e;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.right h3 {
+    color: #c27b35;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.right p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+.highlight {
+    margin-top: 10px;
+    padding: 12px;
+    background: #e5f4e4;
+    border-left: 5px solid #36834e;
+    border-radius: 8px;
+    color: #245b36;
+    font-style: italic;
+}
+
+.footer {
+    margin-top: 15px;
+    text-align: center;
+    color: #b27b35;
+    font-size: 15px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 750px) {
+
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 15px;
+    }
+
+    .container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left {
+        height: 300px;
+    }
+
+    .right {
+        padding: 25px;
+    }
+
+}
